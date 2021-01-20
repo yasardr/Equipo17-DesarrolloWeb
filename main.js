@@ -59,7 +59,7 @@ console.log('Test 7:', deepEqual(john, { firstName: 'John', lastName: 'Do' })) /
  * arreglos del tamaño determinado por size.
  *  
  */
-function chunk(array, size) {
+/*function chunk(array, size) {
     var result = [];
     var elements = [];
     var position = 0;
@@ -85,4 +85,52 @@ console.log('Test 2:', chunk(data, 2)) // [[1, 2], [3, 4], [5, 6], [7, 8]]
 console.log('Test 3:', chunk(data, 3)) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 console.log('Test 4:', chunk(data, 4))
 console.log('Test 5:', chunk(data, 5))
-console.log('Test 6:', chunk(data, 9))
+console.log('Test 6:', chunk(data, 9))*/
+
+/**
+ * Function 3
+ * Escribir una función frequency que recibe un string como argumento. 
+ * Esta función debe contar la frecuencia o el número de veces que se 
+ * repite cada carácter. El resultado debe mostrarse en un objeto donde 
+ * las propiedades sean los caracteres, y los valores sean la frecuencia. 
+ * Los resultados deben ordenarse ascendentemente por los caracteres y no 
+ * la frecuencia.
+ */
+
+/*function frequency(string) {
+    var result = {};
+    var cont = 0;
+    var position = 0;
+    if (string.length > 0) {
+        while (position < string.length) {
+            for (let i = 0; i < string.length; i++) {
+                if (string.charAt(position) === string.charAt(i)) {
+                    cont++;
+                }
+            }
+            result[string.charAt(position)] = cont;
+            cont = 0;
+            position++;
+        }
+    }
+    result = orderArray(result);
+    return result;
+}
+
+function orderArray(obj) {
+    var elements = Object.keys(obj);
+    var finalObj = {};
+    elements.sort();
+    for (let i = 0; i < elements.length; i++) {
+        finalObj[elements[i]] = obj[elements[i]];
+    }
+    return finalObj;
+}
+
+console.log('Test 1:', frequency('cccbbbaaa'))
+    // {a: 3, b: 3, c: 3}
+console.log('Test 2:', frequency('www.bedu.org'))
+    // {.: 2, b: 1, d: 1, e: 1, g: 1, o: 1, r: 1, u: 1, w: 3}
+console.log('Test 3:', frequency('john.doe@domain.com'))
+    // {.: 2, @: 1, a: 1, c: 1, d: 2, e: 1, h: 1, i: 1, j: 1, m: 2, n: 2, o: 4}
+console.log('Test 3:', frequency(''))*/
